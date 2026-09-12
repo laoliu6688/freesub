@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+- name: 🇰🇿 KZ 01 - xiaohe
   type: ss
-  server: 188.208.110.58
-  port: 8444
+  server: 94.198.220.183
+  port: 64674
   cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
+  password: s8LbJCgUiGXeCKVc63tHJP
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇰🇿 KZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇰🇿 KZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
