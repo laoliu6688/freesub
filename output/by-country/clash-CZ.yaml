@@ -6,60 +6,32 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 172.67.187.121
+  server: cz1.zuoai.cf
   port: 443
-  uuid: f8546acb-185c-43a9-8065-b901c9f353c9
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jtv3y5hswdq0iiykejteoqqecsx.uybhnhbhbj.workers.dev
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /vl/lQvZpD6BDBDFcrhffa1JYDt?ed=2560
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: jtv3y5hswdq0iiykejteoqqecsx.uybhnhbhbj.workers.dev
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 104.18.34.21
-  port: 8443
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: socks5.revil-time3.workers.dev
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
   network: ws
   ws-opts:
-    path: /socks5://128.140.46.169:13482
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vless
-  server: 172.67.208.235
-  port: 2096
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: courses.mftplus.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: courses.mftplus.qzz.io
+      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 rules:
 - MATCH,PROXIES
