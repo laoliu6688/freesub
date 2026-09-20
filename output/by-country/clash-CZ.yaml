@@ -19,8 +19,8 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 172.64.154.8
-  port: 8880
+  server: 104.18.47.113
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -32,49 +32,21 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇨🇿 CZ 03 - xiaohe
   type: vless
-  server: 195.85.23.75
+  server: 185.18.250.123
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: notls.lukongtou.eu.org
 - name: 🇨🇿 CZ 04 - xiaohe
   type: vless
-  server: 195.85.23.219
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - xiaohe
-  type: vless
-  server: 195.85.23.248
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - xiaohe
-  type: vless
-  server: 162.159.24.131
+  server: 172.64.229.170
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -85,6 +57,20 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 05 - xiaohe
+  type: vless
+  server: 188.114.97.8
+  port: 8443
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,7 +81,6 @@ proxy-groups:
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
   - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,6 +91,5 @@ proxy-groups:
   - 🇨🇿 CZ 03 - xiaohe
   - 🇨🇿 CZ 04 - xiaohe
   - 🇨🇿 CZ 05 - xiaohe
-  - 🇨🇿 CZ 06 - xiaohe
 rules:
 - MATCH,PROXIES
