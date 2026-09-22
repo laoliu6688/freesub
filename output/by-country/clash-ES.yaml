@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
   type: vless
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  type: vless
   server: 152.114.195.163
   port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -18,13 +31,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
