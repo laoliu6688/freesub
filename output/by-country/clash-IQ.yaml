@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - xiaohe
+- name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 131.123.37.199
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: 172.67.145.5
+  port: 443
+  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: netra-85a0ca.shoameni19.workers.dev
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
     headers:
-      Host: 131.123.37.199
+      Host: netra-85a0ca.shoameni19.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
