@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 172.67.145.5
+  server: 104.21.16.109
   port: 443
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netra-85a0ca.shoameni19.workers.dev
+  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
   network: ws
   ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
+    path: /vl/6871nrbnl9WsdAiOUInt
     headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
+      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
