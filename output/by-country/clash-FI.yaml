@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
+  server: 84.22.150.39
+  port: 7443
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇫🇮 FI 02 - xiaohe
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -16,13 +30,6 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - xiaohe
-  type: ss
-  server: foodal.color-shop.ir
-  port: 5566
-  cipher: 2022-blake3-aes-256-gcm
-  password: olF2/aNyAxEBf0CHoFlkGlAXUdw+ap1CzFd3AL4WuuM=:d8C1FciKoaFD6xRFbCYyFYlT44MV3zYlXvD6DfhsSqo=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
