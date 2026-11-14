@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 185.86.147.175
+  server: 31.177.111.184
   port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
+  servername: zry9ocg43w.flowersgood.top
   network: ws
   ws-opts:
-    path: /service/telemetry/045d381f1166/
+    path: /static/collect/9412171e8a3a/
     headers:
-      Host: bhjolq0d0l.flowersgood.top
+      Host: zry9ocg43w.flowersgood.top
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: ss
   server: 185.22.153.117
