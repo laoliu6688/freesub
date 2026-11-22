@@ -8,8 +8,8 @@ proxies:
   type: ss
   server: 185.164.175.81
   port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0
+  password: ''
   udp: true
 proxy-groups:
 - name: PROXIES
